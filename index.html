@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="mydrag.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".box").mydrag();
+})
+	
+</script>
+<style type="text/css">
+*{ margin:0px; padding:0px;}
+
+body{
+		background:#999999;}
+
+.box{
+	position:absolute;
+	top:200px;
+	left:500px;
+	width:300px;
+	margin:0 auto;
+	border:1px solid #F63;
+		cursor:move;
+	}
+	
+.top{
+	background:#006666;
+	color:#FFFFFF;
+	text-align:center;
+	font-weight:bold;
+	height:30px;
+
+	}
+	
+.content{
+	background:#FFF;
+	height:200px;
+	padding:10px;
+	}
+
+</style>
+</head>
+<body>
+<div class="box">
+	<div class="top">这里按下鼠标移动</div>
+    <div class="content">这里放置内容</div>
+</div>
+</body>
+</html>
